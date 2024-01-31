@@ -88,7 +88,7 @@ body::before {
   padding: 15px 19px;
 }
 
-.pausa:hover {
+.pause:hover {
   background-color: transparent;
   color: #fff;
   font-size: 30px;
