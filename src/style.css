@@ -32,8 +32,7 @@ body::before {
   width: 70vw;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
-    0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .slide {
@@ -83,14 +82,16 @@ body::before {
 .pause {
   opacity: 0.8;
   color: black;
-  border: none;
-  transition: ease-in-out 0.5s;
+  border: 2px solid transparent;
+  transition: ease-in-out 0.75s;
   top: 61%;
   padding: 15px 19px;
 }
 
-.pause:hover {
+.pausa:hover {
+  background-color: transparent;
   color: #fff;
+  font-size: 30px;
   border: 2px solid orange;
   cursor: pointer;
   opacity: 1.5;
