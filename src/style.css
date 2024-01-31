@@ -55,14 +55,19 @@ body::before {
 .control {
   position: fixed;
   background-color: transparent;
-  color: #fff;
   padding: 15px 35px;
   font-size: 30px;
   border: 2px solid orange;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
   opacity: 1.5;
+}
+
+.control,
+.indicator,
+.pause:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .control:focus {
@@ -90,10 +95,8 @@ body::before {
 
 .pause:hover {
   background-color: transparent;
-  color: #fff;
   font-size: 30px;
   border: 2px solid orange;
-  cursor: pointer;
   opacity: 1.5;
 }
 
@@ -101,7 +104,6 @@ body::before {
   position: absolute;
   bottom: 10px;
   left: 0;
-  color: #fff;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -118,6 +120,7 @@ body::before {
   border-radius: 20px;
   transition: ease 1s;
   box-shadow: 0px 0px 15px 3px rgba(237, 235, 235, 0.652);
+
 }
 
 .indicator.active {
